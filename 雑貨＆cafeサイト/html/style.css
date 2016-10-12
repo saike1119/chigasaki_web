@@ -1,0 +1,333 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* reset */
+html {
+	overflow:scroll;
+}
+body {
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	text-align:center;
+	line-height:1.3;
+	background-image: url(images/body_bg.jpg);
+	background-repeat: repeat-x;
+	font-size: 80%;
+	line-height: 1.4em;	
+}
+div { zoom: 1;/*for IE 5.5-7*/}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {
+	margin:0;
+	padding:0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+	font-style:normal;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+	border:none;
+}
+caption,th {
+	text-align:left;
+}
+hr,legend {
+	display:none;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-size:100%;
+}
+img,abbr,acronym,fieldset,a {
+	border:0;
+}
+ul li {
+	list-style-type:none;
+}
+img{display:inline-block;}
+a {
+	text-decoration:none;
+	color:#A0CECF;
+}
+a:hover {
+	text-decoration: underline;
+	color: #A0CECF;
+}
+a img{
+-webkit-transition:opacity 0.5s;
+}
+a:hover img,
+a:hover img{
+background:none;
+opacity:0.7;
+filter:alpha(opacity="70");
+}
+
+/* base */
+body {
+	background-image: url(images/body_bg.jpg);
+	background-repeat: repeat-x;
+	background-position: top;
+	text-align: center;
+}
+#wrap {
+	width: 857px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: left;
+}#head {
+	text-align: left;
+	overflow: hidden;
+}
+#head h1 a img {
+	float: left;
+	width: 154px;
+	margin-right: 10px;
+}
+#head #snipet {
+	font-size: 10px;
+	padding-top: 15px;
+}
+#head #navi_area {
+	clear: both;
+	overflow: hidden;
+	height: 44px;
+}
+#head #navi_area ul li {
+	float: left;
+}
+#main_area #prof_area {
+	background-image: url(images/top_prof_bg.jpg);
+	background-repeat: repeat-y;
+	background-position: left bottom;
+	text-align: right;
+	padding-left: 70px;
+}
+#main_area #prof_area #prof_area_in {
+	background-image: url(images/top_prof.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	height: 102px;
+	_height: 172px;
+	width: 500px;
+	_width:810px;
+	text-align: left;
+	padding-top: 70px;
+	padding-left: 70px;
+	padding-right: 240px;
+}
+#main_area #prof_area #prof_area_in h2 {
+	padding-top: -30px;
+	color:#bf9d50;/*プロフィールの名前の色の変更*/
+}
+#main_area #prof_area #prof_area_in p {
+	font-size: 10px;
+	line-height: 1.3em;
+}
+#main_area #menu_area {
+	background-image: url(images/top_menu_bg.jpg);
+	background-repeat: repeat-y;
+	background-position: left top;
+	padding-bottom: 32px;
+}
+#menu_area #menu_area_in {
+	overflow: hidden;
+	margin-top: 32px;
+	margin-left: 82px;
+}
+#menu_area #menu_area_in #menu_in_left,#menu_area #menu_area_in #menu_in_right {
+	float: left;
+	width:375px;
+}
+#menu_area #menu_area_in img.left {
+	float: left;
+	margin-right: 10px;
+}
+#menu_area #menu_area_in #menu_in_left h3,#menu_area #menu_area_in #menu_in_right h3 {
+	color:#bf9d50;/*メニューのタイトルの変更*/
+	margin-bottom: 10px;
+}
+
+#main_area #bnr_area {
+	background-image: url(images/top_bnr_bg.jpg);
+	background-repeat: repeat-y;
+	background-position: left top;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	padding-left: 82px;
+	overflow: hidden;
+}
+#main_area #bnr_area a img {
+	float: left;
+	margin-right: 10px;
+}
+#main_area #new_area {
+	background-image: url(images/top_new_bg.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+#main_area #new_area #new_area_in {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 72px;
+}
+#main_area #new_area #new_area_in dl {
+	height: 120px;
+	width: 460px;
+	overflow: auto;
+}
+#main_area #new_area #new_area_in dl dt,#main_area #new_area #new_area_in dl dd {
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+	font-size: 90%;
+}
+#main_area #new_area #new_area_in dl dt {
+	float: left;
+	padding-right: 50px;
+	background-image: url(images/icon.jpg);
+	background-repeat: no-repeat;
+	background-position: left 5px;
+	padding-left: 20px;
+}
+#foot {
+	background-image: url(images/fot_bg.jpg);
+	background-repeat: repeat-x;
+	background-position: top;
+}
+#foot #foot_in {
+	text-align: right;
+	width: 810px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 5px;
+}
+#foot #foot_in ul {
+	text-align: left;
+	padding-left: 220px;
+}
+#foot #foot_in ul li {
+	float: left;
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #FFF;
+	margin-right: 17px;
+	padding-left: 12px;
+	padding-top: 3px;
+	font-size: 11px;
+	line-height: 1em;
+}
+#foot #foot_in ul li a{
+	color:white;/*文字の色の変更*/
+ text-decoration:none;}
+#foot #foot_in ul li a:hover{
+ text-decoration:underline;}
+#foot #foot_in #copy {
+	clear: both;
+	margin-top: 15px;
+	display: inline-block;
+	font-size: 11px;
+	margin-right: 27px;
+	margin-bottom: 80px;
+}
+
+/*about*/
+#main_area #about_area {
+	background-image: url(images/top_menu_bg.jpg);
+	background-repeat: repeat-y;
+	background-position: left top;
+	padding-bottom: 32px;
+}
+#about_area #about_area_in {
+	overflow: hidden;
+	margin-top: 32px;
+	margin-left: 82px;
+}
+#about_area #about_area_in h3 {
+	color:#bf9d50;/*店舗の名前の色の変更*/
+	margin-bottom: 10px;
+	background-image: url(images/icon.jpg);
+	background-repeat: no-repeat;
+	background-position: left 5px;
+	padding-left: 15px;
+}#about_area #about_area_in #about_right p {
+	margin-bottom: 10px;
+}
+#about_area #about_area_in #about_left {
+	float: left;
+	margin-right: 20px;
+}
+/*menu*/
+#main_area .menu_page_area {
+	background-image: url(images/top_menu_bg.jpg);
+	background-repeat: repeat-y;
+	background-position: left top;
+	padding-bottom: 32px;
+}
+.menu_page_area h2 img {
+	margin-bottom: 30px;
+}
+
+.menu_page_area .menu_area_in {
+	overflow: hidden;
+	margin-left: 82px;
+}
+.menu_page_area .menu_area_in h3 {
+	color:#bf9d50;/*商品の名前の色の変更*/
+	margin-bottom: 10px;
+	background-image: url(images/icon.jpg);
+	background-repeat: no-repeat;
+	background-position: left 5px;
+	padding-left: 15px;
+}
+.menu_page_area .menu_area_in .menu_main_photo {
+	margin-bottom: 20px;
+}
+
+.menu_page_area .menu_area_in .menu_right p {
+	margin-bottom: 10px;
+}
+.menu_page_area .menu_area_in .menu_left {
+	float: left;
+	margin-right: 20px;
+}.menu_page_area .menu_area_in .menu_right {
+	float: left;
+	width: 450px;
+}
+/*access*/
+#main_area .acc_page_area {
+	background-image: url(images/top_menu_bg.jpg);
+	background-repeat: repeat-y;
+	background-position: left top;
+	padding-bottom: 32px;
+}
+.acc_page_area h2 img {
+	margin-bottom: 30px;
+}
+
+.acc_page_area .acc_area_in {
+	overflow: hidden;
+	margin-left: 82px;
+}
+.acc_page_area .acc_area_in h3 {
+	color:#bf9d50;/*店舗の名前の色の変更*/
+	margin-bottom: 10px;
+	background-image: url(images/icon.jpg);
+	background-repeat: no-repeat;
+	background-position: left 5px;
+	padding-left: 15px;
+}
+.acc_page_area .acc_area_in .acc_left {
+	float: left;
+	margin-right: 20px;
+}.acc_page_area .acc_area_in .acc_right p {
+	margin-bottom: 10px;
+}
+.acc_page_area .acc_area_in .acc_right {
+	float: left;
+	width: 450px;
+}
+
+
+h3
+{
+color:#bf9d50;
+
+}
